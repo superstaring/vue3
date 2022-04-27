@@ -35,12 +35,12 @@ export default defineComponent({
    const store = useStore();
    
     // state
-    const storeStateA = useState(['moduleA']);
+    const storeStateA = useState(['moduleA'], false);
 
     // state
-    const storeStateFns = mapState('moduleB', ['BValue','BName','BObject']);
+    const storeStateFns: any = mapState('moduleB', ['BValue','BName','BObject']);
 
-    const storeState = {}
+    const storeState: any = {}
     Object.keys(storeStateFns).forEach(fnnKey=>{
       const fn = storeStateFns[fnnKey].bind({$store:store})
       storeState[fnnKey]=computed(fn)
@@ -49,8 +49,8 @@ export default defineComponent({
    // getters
    const storeGetterA = useState(['AGetters'],true);
 
-   const storeGetterModuleB = mapGetters('moduleB', ['BGetters']); 
-    const storeGetterB = {}
+   const storeGetterModuleB: any = mapGetters('moduleB', ['BGetters']); 
+    const storeGetterB: any = {}
     Object.keys(storeGetterModuleB).forEach(fnnKey=>{
       const fn = storeGetterModuleB[fnnKey].bind({$store:store})
       storeGetterB[fnnKey]=computed(fn)

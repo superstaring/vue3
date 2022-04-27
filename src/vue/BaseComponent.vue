@@ -10,7 +10,7 @@
 <script lang="ts">
 import { defineComponent, ref, provide } from 'vue';
 import ChildComponent from './ChildComponent.vue';
-import VueXComp from './VueXComp';
+import VueXComp from './VueXComp.vue';
 export default defineComponent({
   name: 'BaseComponent',
   components: {

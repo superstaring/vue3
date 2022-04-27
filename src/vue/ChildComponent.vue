@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import NextComponent from './NextComponent';
+import NextComponent from './NextComponent.vue';
 export default defineComponent({
   name: 'ChildComponent',
   components: {

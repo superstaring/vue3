@@ -15,7 +15,7 @@
 import { defineComponent, computed } from 'vue';
 import { useStore } from 'vuex';
 export default defineComponent({
-  name: 'VueX',
+  name: 'VueXComp',
   setup(){
     const store = useStore();
 

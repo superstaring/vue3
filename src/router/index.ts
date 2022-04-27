@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import BaseComoponent from "../vue/BaseComoponent.vue";
+import BaseComponent from "../vue/BaseComponent.vue";
 import VueXModules from "../vue/VueXMoudules.vue";
 import VueXModulesMap from "../vue/VueXModulesMap.vue";
 
@@ -22,7 +22,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/vue3",
     name: "vue3",
-    component: BaseComoponent,
+    component: BaseComponent,
   },
   {
     path: "/Vuex-modules",
