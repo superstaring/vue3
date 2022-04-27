@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/vue3">VUE3</router-link> |
     <router-link to="/Vuex-modules">Vuex-modules</router-link> |
-    <router-link to="/Vuex-modules-map">Vuex-modules-map</router-link>
+    <router-link to="/Vuex-modules-map">Vuex-modules-map</router-link> |
+    <router-link to="/script-setup">script-setup</router-link>
   </nav>
   <router-view/>
 </template>

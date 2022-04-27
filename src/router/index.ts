@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import BaseComponent from "../vue/BaseComponent.vue";
 import VueXModules from "../vue/VueXMoudules.vue";
 import VueXModulesMap from "../vue/VueXModulesMap.vue";
+import ScriptSetup from '../vue/ScriptSetup.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -34,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Vuex-modules-map",
     component: VueXModulesMap,
   },
+  {
+    path: "/script-setup",
+    name: "script-setup",
+    component: ScriptSetup,
+  }
 ];
 
 const router = createRouter({
