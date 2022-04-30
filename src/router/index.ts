@@ -3,7 +3,8 @@ import HomeView from "../views/HomeView.vue";
 import BaseComponent from "../vue/BaseComponent.vue";
 import VueXModules from "../vue/VueXMoudules.vue";
 import VueXModulesMap from "../vue/VueXModulesMap.vue";
-import ScriptSetup from '../vue/ScriptSetup.vue';
+import ScriptSetup from "../vue/ScriptSetup.vue";
+import TotalComponent from "../vue/Setup/TotalComponent.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -39,7 +40,12 @@ const routes: Array<RouteRecordRaw> = [
     path: "/script-setup",
     name: "script-setup",
     component: ScriptSetup,
-  }
+  },
+  {
+    path: "/setup",
+    name: "setup",
+    component: TotalComponent,
+  },
 ];
 
 const router = createRouter({

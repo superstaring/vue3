@@ -1,14 +1,3 @@
-<template>
-    <div>
-       <p>script-setup</p>
-       <p>val: {{val}}</p>
-       <ScriptSetupChild :val="val" @clickChild="clickChild" />
-       <p>{{age}}</p>
-       <p>reactive: {{users.name}}-{{users.age}}</p>
-       <p>count: {{count}}<button @click="clickCount">点击++</button></p>
-    </div>
-</template>
-
 <script setup lang="ts">
    // setup 在script中的使用
    import { ref, reactive } from 'vue';
@@ -27,6 +16,17 @@
        count.value +=10;
    }
 </script>
+
+<template>
+    <div>
+       <p>script-setup</p>
+       <p>val: {{val}}</p>
+       <ScriptSetupChild :val="val" @clickChild="clickChild" />
+       <p>{{age}}</p>
+       <p>reactive: {{users.name}}-{{users.age}}</p>
+       <p>count: {{count}}<button @click="clickCount">点击++</button></p>
+    </div>
+</template>
 
 <style scoped>
 
