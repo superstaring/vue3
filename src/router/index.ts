@@ -4,7 +4,7 @@ import BaseComponent from "../vue/BaseComponent.vue";
 import VueXModules from "../vue/VueXMoudules.vue";
 import VueXModulesMap from "../vue/VueXModulesMap.vue";
 import ScriptSetup from "../vue/ScriptSetup.vue";
-import TotalComponent from "../vue/setup/TotalComponent.vue";
+import TotalComponent from "../vue/Setup/TotalComponent.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
