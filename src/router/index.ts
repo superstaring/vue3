@@ -5,6 +5,7 @@ import VueXModules from "../vue/VueXMoudules.vue";
 import VueXModulesMap from "../vue/VueXModulesMap.vue";
 import ScriptSetup from "../vue/ScriptSetup.vue";
 import TotalComponent from "../vue/Setup/TotalComponent.vue";
+import TotalNaiveUi from "../vue/naive-ui/TotalNaiveUi.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -45,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/setup",
     name: "setup",
     component: TotalComponent,
+  },
+  {
+    path: "/naive-ui",
+    name: "naive-ui",
+    component: TotalNaiveUi,
   },
 ];
 

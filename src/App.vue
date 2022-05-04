@@ -6,7 +6,8 @@
     <router-link to="/Vuex-modules">Vuex-modules</router-link> |
     <router-link to="/Vuex-modules-map">Vuex-modules-map</router-link> |
     <router-link to="/script-setup">script-setup</router-link> |
-    <router-link to="/setup">setup</router-link>
+    <router-link to="/setup">setup</router-link> |
+    <router-link to="/naive-ui">naive-ui</router-link>
   </nav>
   <router-view/>
 </template>
